@@ -1,0 +1,31 @@
+[color]
+	ui = auto
+[user]
+	name = liangss
+	email = 18676342210@163.com
+[alias]
+	ci = commit
+	st = status
+	br = branch -v
+	co = checkout
+	uncommit = reset --soft HEAD^
+	br = branch
+	co = checkout
+	g = grep -n --color -E
+	l = log --pretty=oneline --abbrev-commit --graph --decorate
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
+
+	# Handy shortcuts for rebasing
+	rc = rebase --continue
+	rs = rebase --skip
+	ra = rebase --abort
+[push]
+	default = simple
+[merge]
+	conflictstyle = diff3
+[core]
+	editor = vim
+[http]
+	sslVerify = false
+[credential]
+	helper = store
